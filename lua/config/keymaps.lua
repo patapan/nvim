@@ -7,16 +7,16 @@ end
 local wk = require("which-key")
 
 -- change‑like operators that should NOT yank
-local no_yank_changes = {
-    { "c", '"_c',  mode = { "n", "v" }, desc = "Change – keep clipboard" },
-    { "C", '"_C',  mode = "n",          desc = "Change to EOL – keep clipboard" },
-    { "s", '"_s',  mode = "n",          desc = "Substitute char – keep clipboard" },
-    { "S", '"_S',  mode = "n",          desc = "Substitute line – keep clipboard" },
-    { "cc", '"_cc', mode = "n",         desc = "Change line – keep clipboard" },
-}
-
-wk.add(no_yank_changes)
-
+-- local no_yank_changes = {
+--     { "c", '"_c',  mode = { "n", "v" }, desc = "Change – keep clipboard" },
+--     { "C", '"_C',  mode = "n",          desc = "Change to EOL – keep clipboard" },
+--     { "s", '"_s',  mode = "n",          desc = "Substitute char – keep clipboard" },
+--     { "S", '"_S',  mode = "n",          desc = "Substitute line – keep clipboard" },
+--     { "cc", '"_cc', mode = "n",         desc = "Change line – keep clipboard" },
+-- }
+--
+-- wk.add(no_yank_changes)
+--
 wk.add({
     { "<leader>a",  group = "Whole file ops" },            -- group header
     { "<leader>aa", select_entire_file,                    desc = "Select entire file" },
